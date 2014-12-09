@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity"
+    android:background="#fff"
+    >
+
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+
+        android:src="@drawable/wp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/imageView1" >
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button android:id="@+id/button1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp" android:text="IMPORT CONTACTS"
+                android:background="@drawable/blue"/>
+
+            <Button android:id="@+id/button2"
+                android:layout_width="fill_parent"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="OPEN W-APP"
+                android:background="@drawable/yellow"/>
+
+            <Button android:id="@+id/button3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp" android:text="EXPORT CONTACTS"
+                android:background="@drawable/green"/>
+
+            <Button android:id="@+id/button4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp" android:text="DELETE CONTACTS"
+                android:background="@drawable/red"/>
+
+            <TextView android:id="@+id/tv1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="50dp" android:text="STATUS"
+                android:background="#fff"
+                android:gravity="center"/>
+         </LinearLayout> </ScrollView>
+
+
+
+</RelativeLayout>
